@@ -1,7 +1,6 @@
 
 
 require "astatt.keys"
-require "astatt.functions"
 require "astatt.options"
 require "astatt.plugins"
 require "astatt.colorscheme"
