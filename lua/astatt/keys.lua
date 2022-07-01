@@ -21,6 +21,32 @@ vim.g.maplocalleader = " "
 
 
 keymap("i", "kj", "<ESC>", opts)
+-- Pop open the file explorer
+keymap("n", "<leader>e", ":Lex 30<cr>", opts)
+
+
+
+-- -- WINDOW NAVIGATION -- --
+-- Better Window Navigation
+keymap("n", "<C-h>", "<C-w>h", opts)
+keymap("n", "<C-j>", "<C-w>j", opts)
+keymap("n", "<C-k>", "<C-w>k", opts)
+keymap("n", "<C-l>", "<C-w>l", opts)
+-- Resize with arrows
+keymap("n", "<C-Up>", ":resize -2<CR>", opts)
+keymap("n", "<C-Down>", ":resize +2<CR>", opts)
+keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
+keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
+
+-- -- VISUAL MODE ----
+-- Tab and S-Tab move visual text
+keymap("v", "<S-Tab>", "<gv", opts)
+keymap("v", "<Tab>", ">gv", opts)
+
+-- Move Text Up and Down
+keymap("v", "<A-j>", ":m .+1<CR>==", opts)
+keymap("v", "<A-k>", ":m .-2<CR>==", opts)
+keymap("v", "p", '"_dP', opts)
 
 
 
