@@ -53,11 +53,17 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-buffer"                  -- buffer completions
   use "hrsh7th/cmp-path"                    -- path completions
   use "hrsh7th/cmp-cmdline"                 -- cmdline completions
+  use "hrsh7th/cmp-nvim-lsp"
   use "saadparwaiz1/cmp_luasnip"            -- snippet completions 
 
   -- snippits
   use "L3MON4D3/luaSnip"                    -- Snippet engine
   use "rafamadriz/friendly-snippets"        -- a bunch of snippets to use
+
+  -- LSP 
+  use "neovim/nvim-lspconfig"
+  use "williamboman/nvim-lsp-installer"     -- Simple to use language server installer
+  use "simrat39/rust-tools.nvim" 
 
 
   -- Automatically set up your configuration after cloning packer.nvim
@@ -66,3 +72,9 @@ return packer.startup(function(use)
     require("packer").sync()
   end
 end)
+
+
+
+
+
+
