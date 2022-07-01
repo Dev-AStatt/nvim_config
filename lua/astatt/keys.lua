@@ -23,7 +23,8 @@ vim.g.maplocalleader = " "
 keymap("i", "kj", "<ESC>", opts)
 -- Pop open the file explorer
 keymap("n", "<leader>e", ":Lex 30<cr>", opts)
-
+-- Open the FZF
+keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
 
 
 -- -- WINDOW NAVIGATION -- --
