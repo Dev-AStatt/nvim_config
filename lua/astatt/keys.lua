@@ -26,6 +26,9 @@ keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 -- Open the FZF
 keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
 
+vim.cmd[[
+  nnoremap <leader>rn :lua require'lspactions'.rename()<CR>
+]]
 
 -- -- WINDOW NAVIGATION -- --
 -- Better Window Navigation

@@ -1,5 +1,4 @@
 local fn = vim.fn
-
 -- Automatically install packer
 local install_path = fn.stdpath "data" .. "/site/pack/packer/start/packer.nvim"
 if fn.empty(fn.glob(install_path)) > 0 then
@@ -77,6 +76,7 @@ return packer.startup(function(use)
   use "neovim/nvim-lspconfig"
   use "williamboman/nvim-lsp-installer"     -- Simple to use language server installer
   use "simrat39/rust-tools.nvim"            -- I may remove this, it doesnt seem to do anything
+  use "RishabhRD/lspactions"                -- popup for renaming
 
 -- Treesitter
   use {
