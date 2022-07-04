@@ -8,6 +8,8 @@ require "astatt.telescope"
 require "astatt.cmp"
 require "astatt.lsp"
 --require "astatt.rust-tools"
+require "astatt.treesitter"
+
 
 if vim.fn.exists('g:vscode') ~= 0 then
   require "astatt.vscode.settings"

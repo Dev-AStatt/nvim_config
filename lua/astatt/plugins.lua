@@ -53,8 +53,8 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-buffer"                  -- buffer completions
   use "hrsh7th/cmp-path"                    -- path completions
   use "hrsh7th/cmp-cmdline"                 -- cmdline completions
-  use "hrsh7th/cmp-nvim-lsp"
   use "saadparwaiz1/cmp_luasnip"            -- snippet completions 
+  use "hrsh7th/cmp-nvim-lsp"
 
   -- snippits
   use "L3MON4D3/luaSnip"                    -- Snippet engine
@@ -63,8 +63,14 @@ return packer.startup(function(use)
   -- LSP 
   use "neovim/nvim-lspconfig"
   use "williamboman/nvim-lsp-installer"     -- Simple to use language server installer
-  use "simrat39/rust-tools.nvim" 
+  use "simrat39/rust-tools.nvim"            -- I may remove this, it doesnt seem to do anything
 
+-- Treesitter
+  use {
+    "nvim-treesitter/nvim-treesitter",
+    run = "TSUpdate",
+  }
+  use "p00f/nvim-ts-rainbow"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
