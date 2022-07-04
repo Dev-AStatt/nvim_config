@@ -46,6 +46,14 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim"               -- Useful lua functions used ny lots of plugins
   use "windwp/nvim-autopairs"               -- AutoPairs, generates the other () when typing
 
+  use {
+    'kyazdani42/nvim-tree.lua',
+    requires = {
+      'kyazdani42/nvim-web-devicons', -- optional, for file icons
+    },
+    tag = 'nightly' -- optional, updated every week. (see issue #1193)
+  }
+
 
   use 'nvim-telescope/telescope.nvim'         -- FZF
   use 'eddyekofo94/gruvbox-flat.nvim'       -- Colorscheme

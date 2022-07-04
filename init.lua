@@ -11,6 +11,7 @@ require "astatt.lsp"
 require "astatt.treesitter"
 require "astatt.autopairs"
 require "astatt.gitsigns"
+require "astatt.nvim-tree"
 
 if vim.fn.exists('g:vscode') ~= 0 then
   require "astatt.vscode.settings"
