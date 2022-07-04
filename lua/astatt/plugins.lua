@@ -45,6 +45,8 @@ return packer.startup(function(use)
   use "nvim-lua/popup.nvim"                 -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim"               -- Useful lua functions used ny lots of plugins
   use "windwp/nvim-autopairs"               -- AutoPairs, generates the other () when typing
+  use "akinsho/bufferline.nvim"
+  use "moll/vim-bbye"
 
   use {
     'kyazdani42/nvim-tree.lua',
@@ -64,7 +66,7 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-path"                    -- path completions
   use "hrsh7th/cmp-cmdline"                 -- cmdline completions
   use "saadparwaiz1/cmp_luasnip"            -- snippet completions 
-  use "hrsh7th/cmp-nvim-lsp"
+  use "hrsh7th/cmp-nvim-lsp"                -- completion plugin for lsp
 
   -- snippits
   use "L3MON4D3/luaSnip"                    -- Snippet engine
