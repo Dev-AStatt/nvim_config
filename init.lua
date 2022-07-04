@@ -9,7 +9,8 @@ require "astatt.cmp"
 require "astatt.lsp"
 --require "astatt.rust-tools"
 require "astatt.treesitter"
-
+require "astatt.autopairs"
+require "astatt.gitsigns"
 
 if vim.fn.exists('g:vscode') ~= 0 then
   require "astatt.vscode.settings"
