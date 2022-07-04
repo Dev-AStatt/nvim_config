@@ -45,8 +45,9 @@ return packer.startup(function(use)
   use "nvim-lua/popup.nvim"                 -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim"               -- Useful lua functions used ny lots of plugins
   use "windwp/nvim-autopairs"               -- AutoPairs, generates the other () when typing
-  use "akinsho/bufferline.nvim"
-  use "moll/vim-bbye"
+  use "akinsho/bufferline.nvim"             -- plugin to view open buffers in the top bar
+  use "moll/vim-bbye"                       -- this lets it integrate with other plugins
+  use "akinsho/toggleterm.nvim"             -- toggle terminal plugin 
 
   use {
     'kyazdani42/nvim-tree.lua',

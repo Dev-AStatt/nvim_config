@@ -13,6 +13,9 @@ require "astatt.autopairs"
 require "astatt.gitsigns"
 require "astatt.nvim-tree"
 require "astatt.bufferline"
+require "astatt.toggleterm"
+
+
 if vim.fn.exists('g:vscode') ~= 0 then
   require "astatt.vscode.settings"
 end
