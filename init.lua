@@ -14,6 +14,7 @@ require "astatt.gitsigns"
 require "astatt.nvim-tree"
 require "astatt.bufferline"
 require "astatt.toggleterm"
+require "astatt.lualine"
 
 
 if vim.fn.exists('g:vscode') ~= 0 then
